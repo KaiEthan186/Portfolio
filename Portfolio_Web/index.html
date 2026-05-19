@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thant Phyo Maung | Portfolio</title>
+
+  <link rel="icon" href="image/icon.png" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg-canvas" class="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Thant Phyo Maung</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+        <span class="nav-toggle-line"></span>
+      </button>
+
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero / Home -->
+    <section id="home" class="home section">
+      <div class="container home-grid">
+        <div class="home-img reveal">
+          <div class="hero-3d-frame">
+            <div class="hero-3d-ring"></div>
+            <img src="image\pf.jpg" alt="Portrait of Thant Phyo Maung" />
+          </div>
+        </div>
+
+        <div class="home-content reveal reveal-delay-1">
+          <p class="home-tagline">BSc Student at INFO Myanmar College · Full Stack Developer & quality assurance</p>
+          <h1>Hi, I'm <span data-typed>Thant Phyo Maung</span></h1>
+          <p class="home-description">
+            I build modern, responsive web applications using both frontend and backend
+            technologies. I love creating clean, user‑friendly experiences that work beautifully
+            on any device. <br>
+
+            I ensure software quality by testing web applications,
+            identifying bugs, and improving user experiences. I love creating reliable,
+            user-friendly systems that work smoothly across different devices and platforms.
+          </p>
+
+          <div class="home-actions">
+            <a href="#contact" class="btn primary-btn">Hire Me</a>
+            <a href="#experience" class="btn secondary-btn">View Experience</a>
+          </div>
+
+          <div class="social-icons">
+            <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Services</h2>
+        <p class="section-subtitle reveal">
+          I help you turn ideas into fast, responsive, and beautiful web experiences.
+        </p>
+
+        <div class="cards-grid">
+          <article class="card reveal" data-tilt>
+            <i class="fa-solid fa-code card-icon"></i>
+            <h3>Frontend Development</h3>
+            <p>
+              Modern, responsive UIs using HTML, CSS, and JavaScript with a focus on usability
+              and accessibility.
+            </p>
+          </article>
+
+          <article class="card reveal reveal-delay-1" data-tilt>
+            <i class="fa-solid fa-database card-icon"></i>
+            <h3>Backend Development</h3>
+            <p>
+              Scalable, secure APIs and server‑side logic to power your applications.
+            </p>
+          </article>
+
+          <article class="card reveal reveal-delay-2" data-tilt>
+            <i class="fa-solid fa-clipboard-check card-icon"></i>
+            <h3>Quality Assurance</h3>
+            <p>
+              End-to-end quality assurance from test planning to bug reporting, ensuring reliable, 
+              clean, and user-friendly applications across all devices.
+            </p>
+          </article>
+
+          <article class="card reveal reveal-delay-2" data-tilt>
+            <i class="fa-solid fa-laptop-code card-icon"></i>
+            <h3>Full Stack Projects</h3>
+            <p>
+              End‑to‑end solutions from database design to user interface, delivered clean and maintainable.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Skills</h2>
+        <p class="section-subtitle reveal">
+          A balanced set of frontend and backend technologies.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML5 &amp; CSS3</li>
+              <li>JavaScript (ES6+)</li>
+              <li>React</li>
+              <li>VUE</li>
+              <li>Responsive Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-1">
+            <h3>Backend</h3>
+            <ul>
+              <li>Node.js / Express (or similar)</li>
+              <li>RESTful APIs</li>
+              <li>Database Design</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-1">
+            <h3>Backend</h3>
+            <ul>
+              <li>Manual & Functional Testing</li>
+              <li>Bug Reporting & Tracking</li>
+              <li>Test Case & Test Plan Creation</li>
+            </ul>
+          </div>
+
+          <div class="skill-group reveal reveal-delay-2">
+            <h3>Tools &amp; Other</h3>
+            <ul>
+              <li>Git &amp; GitHub</li>
+              <li>Problem Solving</li>
+              <li>Team Collaboration</li>
+              <li>Communication Skill</li>
+              <li>Project Management Skill</li>
+              <li>Other Hard Skills & Soft Skills</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title reveal">Experience</h2>
+        <p class="section-subtitle reveal">
+          Projects and experiences that helped me grow as a developer & Quality Assurance.
+        </p>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <h3>HND Sec-Year Projects · Info Myanmar College</h3>
+            <span class="timeline-date">AI-Base Emotion-Aware Lighting System  (2024 – 2025)</span>
+            <P>
+              Worked on an AI-based Emotion-Aware Lighting System, focusing on emotion detection,
+              smart automation, and creating responsive user-centered experiences.
+            </P> <br>
+
+           
+            <span class="timeline-date">Book Shop E-commerce Web (2024 – 2025)</span>
+            <p>
+              Worked on full stack applications, focusing on clean architecture, database design,
+              and responsive UI.
+            </p>
+          </article>
+
+          <article class="timeline-item reveal">
+            <h3>Quality Assurance Internship · Xypha Tech Company (2026)</h3>
+            <p>
+              Working as a Quality Assurance Internship at Xypha Tech Company in 2026,
+              focusing on manual testing, bug tracking, test case creation, 
+              and ensuring software quality across web applications.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title reveal">Contact</h2>
+        <p class="section-subtitle reveal">
+          Feel free to reach out for freelance work, collaboration, or just to say hello.
+        </p>
+
+        <div class="contact-grid">
+          <form class="contact-form reveal" data-tilt>
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input id="name" type="text" placeholder="Your name" />
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input id="email" type="email" placeholder="you@example.com" />
+              </div>
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4" placeholder="How can I help you?"></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn">Send Message</button>
+          </form>
+
+          <div class="contact-info reveal reveal-delay-1">
+            <h3>Let’s work together</h3>
+            <p>
+              I’m open to internships, junior developer roles and Quality Assurance, and freelance projects where I
+              can learn and create value.
+            </p>
+            <ul>
+              <li><i class="fa-solid fa-envelope"></i> thantphyomaung186@gmail.com</li>
+              <li><i class="fa-solid fa-location-dot"></i>Yangon, Myanmar</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Thant Phyo Maung. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
