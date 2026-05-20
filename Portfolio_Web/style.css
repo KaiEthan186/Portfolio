@@ -67,6 +67,7 @@ main,
 /* Header / Navigation */
 .site-header {
   position: fixed;
+  width: 100%;
   top: 0;
   z-index: 20;
   /* backdrop-filter: blur(16px); */
@@ -77,7 +78,7 @@ main,
     rgba(15, 23, 42, 0.75),
     transparent
   );
-  border-bottom: 1px solid rgba(45, 43, 53, 0.12);
+  border-bottom: 1px solid rgba(192, 191, 198, 0.12);
 }
 
 .header-inner {
@@ -91,7 +92,9 @@ main,
 .logo {
   font-weight: 800;
   background: linear-gradient(90deg, #60a5fa, #a855f7);
+  background-clip: text;
   -webkit-background-clip: text;
+  color: transparent;
   -webkit-text-fill-color: transparent;
   text-decoration: none;
   letter-spacing: 0.06em;
@@ -667,56 +670,84 @@ main,
 }
 
 @media (max-width: 720px) {
+  .site-header {
+    left: 0;
+    right: 0;
+    width: 100%;
+  }
+
   .header-inner {
     height: 3.75rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 0;
   }
 
-  .main-nav {
-    position: absolute;
-    inset-inline: 1.25rem;
-    top: 3.75rem;
-    padding: 0.85rem 1rem;
-    border-radius: 14px;
-    background: rgba(15, 23, 42, 0.98);
-    border: 1px solid rgba(148, 163, 184, 0.35);
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.7rem;
-    transform-origin: top;
-    transform: scaleY(0.9) translateY(-10px);
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity var(--transition-med), transform var(--transition-med);
-  }
-
-  .main-nav.nav-open {
-    opacity: 1;
-    pointer-events: auto;
-    transform: scaleY(1) translateY(0);
+  .logo{
+    font-size: 20px;
+    padding-left: 10px;
   }
 
   .nav-toggle {
     display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    z-index: 31;
+  }
+
+  .main-nav {
+    position: absolute;
+    top: 70px;
+    left: 20px;
+    right: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background: rgba(15, 23, 42, 0.98);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    border-radius: 16px;
+
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+
+    transition: 0.3s ease;
+    margin-left: 0;
+    z-index: 30;
+  }
+
+  .main-nav.nav-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
   }
 
   .home {
-    padding-top: 3.5rem;
-  }
-
-  .section {
-    padding: 3.5rem 0 3.25rem;
+    padding-top: 3rem;
+    margin-left: 55px;
+    
   }
 
   .cards-grid,
-  .skills-grid {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
+  .skills-grid,
   .form-row {
-    grid-template-columns: minmax(0, 1fr);
-  }
-
-  .home-actions {
-    gap: 0.6rem;
+    grid-template-columns: 1fr;
   }
 }
